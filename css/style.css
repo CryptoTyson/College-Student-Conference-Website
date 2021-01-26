@@ -7546,7 +7546,7 @@ a, img {
 	position: relative;
 	width: 300px;
 	float: left;
-	text-align: right;
+	/* text-align: left; */
   }
   
   .direction-r {
@@ -7589,7 +7589,7 @@ a, img {
   .direction-r .flag:before {
 	position: absolute;
 	top: 50%;
-	right: -40px;
+	right: -56px;
 	content: ' ';
 	display: block;
 	width: 12px;
