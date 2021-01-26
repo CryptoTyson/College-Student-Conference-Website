@@ -82,13 +82,13 @@ html {
 	overflow: auto !important;
 	padding: 0 !important;
 	margin: 0 !important;
-	background: #fff;
+	background: rgb(255, 255, 255);
 }
 body {
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	background: #fff;
+	background: rgba(170, 243, 237, 0.555);
 	line-height: 1.7em;
 	padding: 0;
 	display: none;
@@ -194,7 +194,7 @@ header div#logo {
 	float: left;
 	font-family: "Oswald", sans-serif;
 	font-size: 72px;
-	color: white;
+	color:;
 	font-weight: 400;
 	line-height: 60px;
 	-webkit-transition: all 0.3s;
@@ -478,6 +478,8 @@ header.de_header_2.smaller .info {
 	color: #fff;
 	text-align: center;
 	outline: none;
+	font-weight: bold;
+	font-size:large;
 }
 .header-light #mainmenu>li>a {
 	color: #222;
@@ -490,7 +492,7 @@ header.de_header_2.smaller .info {
 	font-size: 6px;
 	margin-left: 20px;
 	margin-top: 0px;
-	color: #f7c51e;
+	color: #e5ff00;
 }
 #mainmenu li:last-child a:after {
 	display: none;
@@ -7775,6 +7777,7 @@ a, img {
   }
   
   }
+  
   
 
   /* FAQ Styling  */
