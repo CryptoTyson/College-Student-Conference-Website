@@ -7481,8 +7481,12 @@ a, img {
 
 	.myclass li h5{
 		font-size:xx-small;
+	/* .myclass li h3{
+		font-size:x-large	 */
 	}
+
 }
+
 
 @media only screen and (max-width: 320px){
 	.myclass li {
@@ -7826,3 +7830,11 @@ a, img {
 	border-top: 1px solid;
 	border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
   }
+
+ @media screen and (max-width:600px){
+	 .myclass li h5{
+		 display: none;
+	 }
+ }
+ 
+}
