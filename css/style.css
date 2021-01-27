@@ -1124,13 +1124,13 @@ header.header-light .logo-2{
 .error {
 	clear:both;
 	display: none;
-	color: #ffa854;
+	color: #ff7b00;
 	padding-top:20px;
 }
 .success {
 	clear:both;
 	display: none;
-	color: #96c346;
+	color: #00e400;
 	padding-top:20px;
 }
 .error img {
@@ -1141,17 +1141,18 @@ header.header-light .logo-2{
 }
 #contact_form {
 	margin-top: 20px;
+	color: whitesmoke;
 }
 #contact_form input[type=text], #contact_form textarea, #contact_form input[type=email], #search, #contact_form select {
 	padding: 10px;
 	margin-bottom: 20px;
-	color: #535254 !important;
-	border: solid 1px #bbb;
+	color: #ffffff !important;
+	border: solid 1px rgb(255, 255, 255);
 	background: none;
 	height: auto;
 }
 #contact_form input[placeholder], #contact_form textarea[placeholder] {
-	color: #eee;
+	color: rgb(255, 255, 255);
 }
 #contact_form textarea {
 	height: 165px;
@@ -1160,7 +1161,7 @@ header.header-light .logo-2{
 	padding: 10px 0 10px 0;
 	margin-bottom: 20px;
 	border: none;
-	border-bottom: solid 2px #bbbbbb;
+	border-bottom: solid 2px #ffffff;
 	background: none;
 	border-radius: 0 !important;
 	height: auto;
@@ -1179,8 +1180,8 @@ header.header-light .logo-2{
 	background: url('../images_02/ui/arrow-down-form-hover.png') no-repeat 98% 60%;
 }
 .form-underline input[type=text], .form-underline textarea, .form-underline input[type=email], .form-underline select {
-	color: #333;
-	border-bottom: solid 1px #bbb;
+	color: rgb(255, 255, 255);
+	border-bottom: solid 1px rgb(255, 255, 255);
 }
 .error_input {
 	border-color: #D31E2B !important;
@@ -5576,6 +5577,7 @@ p.intro {
 	box-shadow: none;
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
+	color:white;
 }
 .owl-arrow {
 	position: absolute;
