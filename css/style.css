@@ -88,7 +88,7 @@ body {
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	background: rgba(170, 243, 237, 0.555);
+	/* background: rgba(170, 243, 237, 0.555); */
 	line-height: 1.7em;
 	padding: 0;
 	display: none;
@@ -172,7 +172,7 @@ header:not(.smaller):not(.header-mobile).header-light.transparent {
 }
 header.autoshow {
 	top: -120px;
-	height: 70px !important;
+	height: 80px !important;
 }
 header.autoshow.scrollOn, header.autoshow.scrollOff {
 	-o-transition: .5s;
@@ -184,7 +184,9 @@ header.autoshow.scrollOn, header.autoshow.scrollOff {
 }
 header.autoshow.scrollOn {
 	top: 0;
+	
 }
+
 header.autoshow.scrollOff {
 	top: -120px;
 }
@@ -196,7 +198,7 @@ header div#logo {
 	font-size: 72px;
 	color:;
 	font-weight: 400;
-	line-height: 60px;
+	line-height: 80px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -205,6 +207,7 @@ header div#logo {
 }
 header .logo-2 {
 	display: none;
+	padding-top: 5px;
 }
 header .logo-scroll {
 	display: none;
@@ -241,14 +244,14 @@ header.smaller #mainmenu ul ul {
 	top: 0px;
 }
 header.smaller {
-	height: 70px;
+	height: 100px;
 	background: rgba(50, 50, 50, .95);
 	position: fixed;
 	top: 0px;
-	/*-webkit-box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.3);
 	-moz-box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.3);
 	box-shadow: 8px 8px 40px 0px rgba(0,0,0,0.3);
-	*/
+	
 	border-bottom: solid 1px #eeeeee;
 }
 header.smaller .btn-rsvp {
@@ -259,14 +262,16 @@ header.smaller .btn-rsvp {
 	margin-top: 0px;
 }
 header.smaller div#logo {
-	line-height: 48px;
+	line-height:40px;
 }
+
 header.smaller.scroll-light {
 	background: #fff;
 }
 header:not(.header-light).smaller.scroll-light div#logo .logo {
 	display: none;
 }
+
 header.smaller.scroll-light div#logo .logo-2 {
 	display: inline-block;
 }
@@ -1417,6 +1422,10 @@ a:hover {
 }
 .de_light a {
 	color: #888;
+	text-align: left;
+    font-weight: bold;
+    line-height: 10px;
+    font-size: small;
 }
 .de_light a:hover {
 	color: #555;
@@ -1665,9 +1674,18 @@ a.btn-text-light {
 	position: absolute;
 	left: 20px;
 }
+
+@media (min-width:800px){
+	a.btn-custom, .btn-custom, a.btn-slider, .btn-slider {
+		font-family: "Montserrat";
+		font-size: 25px;
+		min-width: 120px;
+	}
+}
+
 a.btn-custom, .btn-custom, a.btn-slider, .btn-slider {
 	font-family: "Montserrat";
-	font-size: 12px;
+	font-size: px;
 	min-width: 120px;
 }
 a.btn-custom, .btn-custom {
@@ -1677,6 +1695,7 @@ a.btn-custom, .btn-custom {
 	padding: 10px 30px 10px 30px;
 	min-width: 120px;
 	text-decoration:none;
+	
 }
 a.btn-border {
 	border: solid 1px rgba(255, 255, 255, 1);
@@ -1942,7 +1961,7 @@ hr {
 .form-subscribe .btn-custom{
 	display:table-cell;
 	border-radius:0 60px 60px 0;
-	height:40px;
+	height:0px;
 	vertical-align:middle;
 }
 .form-subscribe input[type=text]:hover{
@@ -3611,7 +3630,7 @@ a.btn-left, a.btn-right {
 	padding: 0 5px 0 5px;
 }
 .de-team-list p.lead {
-	font-size: 14px;
+	font-size: 44px;
 }
 .de-team-list .small-border {
 	float: none;
@@ -4290,7 +4309,7 @@ table thead {
 	outline: none;
 }
 p.lead {
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 2em;
 	margin-top: 0;
 	font-weight: 500;
@@ -6738,6 +6757,9 @@ blockquote.very-big span {
 a, img {
 	outline: 0 !important;
 }
+img.poster{
+	padding-left: 40px;
+}
 .z1 {
 	z-index: 1;
 }
@@ -7574,10 +7596,10 @@ a, img {
 	position: relative;
 	display: inline;
 	background: rgb(248,248,248);
-	padding: 6px 10px;
-	border-radius: 5px;
-	
-	font-weight: 600;
+	/* padding: 6px 10px; */
+	border-radius: 1px;
+	font-size: 20px;
+	font-weight: 800;
 	text-align: left;
   }
   
@@ -7597,7 +7619,7 @@ a, img {
   .direction-r .flag:before {
 	position: absolute;
 	top: 50%;
-	right: -56px;
+	right: -93px;
 	content: ' ';
 	display: block;
 	width: 12px;
@@ -7610,7 +7632,10 @@ a, img {
   }
   
   .direction-r .flag:before {
-	left: -40px;
+	/* left: -40px;
+	position: static; */
+	right: 40px;
+    position: inherit;
   }
   
   .direction-l .flag:after {
@@ -7644,18 +7669,19 @@ a, img {
   .time-wrapper {
 	display: inline;
 	
-	line-height: 1em;
-	font-size: 0.66666em;
+	line-height: 2em;
+	font-size: 1.5rem;
 	color: rgb(250,80,80);
 	vertical-align: middle;
   }
   
   .direction-l .time-wrapper {
-	float: left;
+	float: right;
+	;
   }
   
   .direction-r .time-wrapper {
-	float: right;
+	float: left;
   }
   
   .time {
@@ -7667,9 +7693,10 @@ a, img {
   .desc {
 	margin: 1em 0.75em 0 0;
 	
-	font-size: 0.77777em;
+	font-size: 1.77777em;
+	font-family:Arial, Helvetica, sans-serif;
 	font-style: italic;
-	line-height: 1.5em;
+	
   }
   
   .direction-r .desc {
@@ -7791,7 +7818,7 @@ a, img {
   .accordion {
 	width: 90%;
 	max-width: 1000px;
-	margin: 2rem auto;
+	margin: 10rem auto;
   }
   .accordion-item {
 	background-color: #fff;
@@ -7823,6 +7850,8 @@ a, img {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
+	
+	
   }
   .accordion-item-body-content {
 	padding: 1rem;
@@ -7837,4 +7866,86 @@ a, img {
 	 }
  }
  
+
+
+.footerlogo{
+	height: 150px;
+	width:150px;
+}
+
+.brochure{
+	margin-top: 100px;
+	
+}
+a.brochure.btn-custom{
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+		border: 1px solid black;
+		size: 5cm;
+	  }
+}
+img.poster{
+	/* margin-top:100px;
+	margin-bottom:100px;
+	align-items: center;
+	margin-left: 100px; */
+	vertical-align: middle;
+	padding-left: 50px;
+	
+	/* width:px; */
+}
+ 
+@media(max-width: 650px){
+	.poster{
+		margin-top:100px;
+		margin-bottom:100px;
+		align-items: center;
+		width: 325px;
+		padding-right : 40px;
+	}
+	/* @media(min-width: 650px , max-width:1200px){
+		.poster{
+			margin-top:100px;
+			margin-bottom:100px;
+			align-items: center;
+			width: 300px
+		} */
+	
+}
+
+video{
+	margin-top: 100px;
+}
+
+marquee{
+	background-color:;
+	color: black;
+	font-size: 16px;
+}
+
+address{
+	text-align: center;
+	font-weight: bold;
+	/* line-height: 10px; */
+	font-size: small;
+}
+
+hr{
+	/* line-height: 100px; */
+	/* color: tomato; */
+	/* height: 0px; */
+	margin-bottom: 10px;
+	font-weight: bold;
+	border: 1px solid black;
+}
+
+@media(max-width:650px){
+	.brochure.btn-custom{
+		align-items: center;
+		text-align: center;
+		line-height: 2ch;
+	}
 }
