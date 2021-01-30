@@ -1612,7 +1612,7 @@ a.btn-slider:hover {
 	border-color: #000;
 	border: solid 2px #fff;
 }
-a.btn-custom:hover, .btn-custom:hover {
+a.btn-custom:hover, .btn-custom:hover,a.btn-custom-2:hover {
 	color: #fff;
 	opacity: .8;
 	-webkit-box-shadow: 8px 8px 40px 0px rgba(0, 0, 0, 0.3);
@@ -1678,7 +1678,7 @@ a.btn-text-light {
 @media (min-width:800px){
 	a.btn-custom, .btn-custom, a.btn-slider, .btn-slider {
 		font-family: "Montserrat";
-		font-size: 25px;
+		font-size: 23px;
 		min-width: 120px;
 	}
 }
@@ -7948,4 +7948,23 @@ hr{
 		text-align: center;
 		line-height: 2ch;
 	}
+}
+a.btn-custom-2{
+	background: #eee;
+    color: #fff;
+    border-radius: 40px;
+    padding: 10px 30px 10px 30px;
+    min-width: 120px;
+	text-decoration: none;
+	background-color: #ff7b00;
+	font-family: "Montserrat";
+	font-size: 23px;
+}
+
+@media (max-width:600px){
+	a.btn-custom-2{
+		font-size:17.8px;
+		margin-top: 5px;
+	}
+	
 }
