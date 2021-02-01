@@ -456,7 +456,7 @@ header.de_header_2.smaller .info {
 /* ================================================== */
 
 #mainmenu {
-	font-family: "Montserrat";
+	/* font-family: "Montserrat"; */
 	float: right;
 	font-size: 13px;
 	font-weight: bold;
@@ -7872,9 +7872,9 @@ img.poster{
 	height: 150px;
 	width:150px;
 }
-
+/* 
 .brochure{
-	margin-top: 100px;
+	margin-top: 10px; */
 	
 }
 a.brochure.btn-custom{
@@ -7953,18 +7953,22 @@ a.btn-custom-2{
 	background: #eee;
     color: #fff;
     border-radius: 40px;
-    padding: 10px 30px 10px 30px;
+    padding: 15px 30px 15px 30px;
     min-width: 120px;
 	text-decoration: none;
 	background-color: #ff7b00;
 	font-family: "Montserrat";
 	font-size: 23px;
+	margin-top: 20px;
+	height: 45px;
+	align-content: center;
 }
 
 @media (max-width:600px){
 	a.btn-custom-2{
 		font-size:17.8px;
-		margin-top: 5px;
+		margin-top: 12px;
+
 	}
 	
 }
