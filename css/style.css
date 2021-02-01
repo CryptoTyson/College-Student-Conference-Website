@@ -7876,17 +7876,18 @@ img.poster{
 .brochure{
 	margin-top: 10px; */
 	
-}
+
 a.brochure.btn-custom{
 	
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100px;
+		height: 50px;
 		border: 1px solid black;
 		size: 5cm;
+		margin-top: 20px;
 	  }
-}
+
 img.poster{
 	/* margin-top:100px;
 	margin-bottom:100px;
