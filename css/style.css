@@ -7965,6 +7965,21 @@ a.btn-custom-2{
 	align-content: center;
 }
 
+a.btn-custom-3{
+	background: #eee;
+    color: #fff;
+    border-radius: 40px;
+    padding: 15px 30px 15px 30px;
+    min-width: 120px;
+	text-decoration: none;
+	background-color: #ff7b00;
+	font-family: "Montserrat";
+	font-size: 23px;
+	margin-top: 20px;
+	height: 45px;
+	align-content: center;
+}
+
 @media (max-width:600px){
 	a.btn-custom-2{
 		font-size:17.8px;
@@ -8108,3 +8123,26 @@ div.table-title {
  td.text-right {
    text-align: right;
  }
+
+ @media 
+ only screen and (max-width: 760px) {
+	
+	.table-fill{
+		display: none;
+	}
+	a.btn-custom-3{
+		font-size:17.8px;
+		margin-top: 12px;
+
+	}
+ 
+}
+
+@media
+only screen and (min-width: 760px){
+	a.btn-custom-3{
+		display: none;
+
+	}
+}
+ 
